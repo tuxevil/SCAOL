@@ -1,0 +1,301 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="SCAOLWebsite.Site1" %>
+
+<%@ Register src="menu.ascx" tagname="menu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 788px;
+        }
+        .style2
+        {
+            width: 133px;
+        }
+        .style3
+        {
+            height: 45px;
+        }
+        .style4
+        {
+            height: 45px;
+            width: 134px;
+        }
+        .style5
+        {
+            width: 134px;
+        }
+        .style6
+        {
+            width: 134px;
+            height: 669px;
+        }
+        .style7
+        {
+            height: 669px;
+        }
+        .style8
+        {
+            height: 45px;
+            width: 695px;
+        }
+        .style9
+        {
+            height: 669px;
+            width: 695px;
+        }
+        .style10
+        {
+            width: 695px;
+        }
+        .style11
+        {
+            width: 100%;
+        }
+        .style12
+        {
+            width: 10px;
+        }
+        .style13
+        {
+            width: 119px;
+        }
+        .style14
+        {
+            width: 10px;
+            height: 57px;
+        }
+        .style15
+        {
+            width: 119px;
+            height: 57px;
+        }
+        .style16
+        {
+            height: 57px;
+        }
+        .style17
+        {
+            width: 47px;
+        }
+        .style18
+        {
+            width: 10px;
+            height: 33px;
+        }
+        .style19
+        {
+            width: 119px;
+            height: 33px;
+        }
+        .style20
+        {
+            height: 33px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1" style="background-image: url('imagenes/fondoSCAol.jpg'); background-repeat: no-repeat; background-attachment: fixed; z-index: auto; width: 1024px; height: 768px">
+        <tr>
+            <td class="style2" valign="top" rowspan="3">
+                <table cellpadding="0" cellspacing="0" class="style11">
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style17">
+            <asp:Label ID="Label1" runat="server" Font-Size="XX-Small" Text="Empresa:"></asp:Label></td>
+                        <td class="style13">
+            <asp:Label ID="Label2" runat="server" Font-Size="XX-Small" ></asp:Label>
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style17">
+        <asp:Label ID="Label3" runat="server" Font-Size="XX-Small" Text="Usuario:"></asp:Label>
+   
+                        </td>
+                        <td class="style13">
+        <asp:Label ID="Label4" runat="server" Font-Size="XX-Small" ></asp:Label>
+    
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btLogOut" runat="server" Font-Size="XX-Small" Text="Cerrar Sesion" Width="72px" 
+                                Height="16px" /></td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style14">
+                            </td>
+                        <td class="style15" colspan="2">
+                            </td>
+                        <td class="style16">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btClientes" runat="server" Text="Clientes" Width="110px" Height="24px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btAgenda" runat="server" Text="Agenda" Width="110px" Height="24px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btCotizaciones" runat="server" Text="Cotizaciones" Width="110px" 
+                                Height="24px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btSolCredito" runat="server" Text="Sol. de Credito" Width="110px" 
+                                Height="24px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style18">
+                            </td>
+                        <td class="style19" colspan="2">
+                            </td>
+                        <td class="style20">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            </td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btReportes" runat="server" Enabled="False" Font-Size="XX-Small" Height="16px"
+    Text="Reportes" Width="110px" style="margin-bottom: 0px" />
+                        </td>
+                        <td>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btVehiculos" runat="server" Enabled="False" Font-Size="XX-Small"
+    Height="16px" Text="Vehiculos" Width="110px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btBancos" runat="server" Enabled="False" Font-Size="XX-Small" Height="16px"
+    Text="Bancos" Width="110px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+            <asp:Button ID="btUsuarios" runat="server" Enabled="False" Font-Size="XX-Small" Height="16px"
+    Text="Usuarios" Width="110px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style12">
+                            &nbsp;</td>
+                        <td class="style13" colspan="2">
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="style4">
+                &nbsp;</td>
+            <td class="style8">
+                </td>
+            <td class="style3">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style6">
+            </td>
+            <td class="style9" valign="top">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+            </td>
+            <td class="style7">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style5">
+                &nbsp;</td>
+            <td class="style10">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
